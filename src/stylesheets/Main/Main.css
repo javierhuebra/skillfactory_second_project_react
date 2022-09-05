@@ -1,0 +1,7 @@
+.main-container{
+    min-height: 70vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

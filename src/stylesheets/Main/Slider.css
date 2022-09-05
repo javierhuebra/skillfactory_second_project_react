@@ -1,0 +1,71 @@
+.container-slider{
+width: 1100px;
+padding: 25px 0;
+background-color: beige;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.arrow{
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.arrow p{
+    font-size: 45px;
+}
+
+.circles-container{
+    display: flex;
+    position: absolute;
+    bottom: -15px;
+    z-index: 11;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 3px;
+    
+}
+.view-port-slider{
+    overflow: hidden;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+
+    border-radius: 20px;
+}
+
+.container-images{
+    display: flex;
+    position: absolute;
+    left: 0%;
+}
+
+.component-slider{
+    width: 1000px;
+    height: 500px;
+    
+}
+.image-1{
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../../images/Main/rickmorty.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-2{
+    background-color: royalblue;
+}
+.image-3{
+    background-color: rebeccapurple;
+}
+

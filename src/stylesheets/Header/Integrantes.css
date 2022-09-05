@@ -1,0 +1,38 @@
+.container-integrantes{
+    position: absolute;
+    transition: 0.5s;
+    right: 0px;
+    top: -300px;
+    z-index: 1;
+    
+}
+ul{
+    list-style: none;
+    background-color: aqua;
+    
+    padding: 10px;
+
+    border-radius: 0px 0px 15px 15px;
+}
+li{
+    margin: 10px 0;
+    background-color: rebeccapurple;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 210px;
+    height: 50px;
+    text-align: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.container-integrantes img{
+    width:  45px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 3px;
+    
+}

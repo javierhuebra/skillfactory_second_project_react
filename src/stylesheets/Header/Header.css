@@ -1,0 +1,23 @@
+.header-container{
+    width: 100vw;
+    height: 10vh;
+    background-color: rebeccapurple;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    
+}
+
+.group-container:hover ~ .container-integrantes{
+    top: 100%;
+}
+.container-integrantes:hover{
+    top: 100%;
+}
+
+
+
