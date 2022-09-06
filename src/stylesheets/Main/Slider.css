@@ -34,7 +34,11 @@ position: relative;
     border-radius: 50%;
     background-color: black;
     margin-left: 3px;
+    opacity: 0.4;
     
+}
+.circulo-suave{
+    opacity: 1;
 }
 .view-port-slider{
     overflow: hidden;
@@ -48,7 +52,17 @@ position: relative;
 .container-images{
     display: flex;
     position: absolute;
+    transition: 0.7s;
+    
+}
+.pos-0{
     left: 0%;
+}
+.pos-1{
+    left: -100%;
+}
+.pos-2{
+    left: -200%;
 }
 
 .component-slider{
@@ -63,9 +77,13 @@ position: relative;
     background-size: cover;
 }
 .image-2{
-    background-color: royalblue;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../../images/Main/usuarios.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .image-3{
-    background-color: rebeccapurple;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../../images/Main/ricky.png);
+    background-position: center;
+    background-size: cover;
 }
 

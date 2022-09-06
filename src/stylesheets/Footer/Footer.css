@@ -1,4 +1,11 @@
 .footer-container{
     height: 20vh;
     background-color: blueviolet;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-container img{
+    border-radius: 15px;
 }
