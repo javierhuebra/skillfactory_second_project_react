@@ -1,7 +1,7 @@
 .container-slider{
 width: 1100px;
 padding: 25px 0;
-background-color: beige;
+/* background-color: beige; */
 display: flex;
 justify-content: center;
 align-items: center;

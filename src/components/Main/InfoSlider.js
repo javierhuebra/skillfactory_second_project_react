@@ -1,5 +1,7 @@
 import '../../stylesheets/Main/InfoSlider.css'
-const InfoSlider = ({ title, info, image, btnText }) =>{
+import { Link } from 'react-router-dom';
+
+const InfoSlider = ({ title, info, image, btnText, route }) =>{
     return(
         <div className="container-info-total">
             <div className='cont cont-left'>
@@ -10,7 +12,7 @@ const InfoSlider = ({ title, info, image, btnText }) =>{
                 </div>
             </div>
             <div className='cont cont-right'>
-                <button>{btnText}</button>
+                <Link to={route}><button>{btnText}</button></Link>
             </div>
             
         </div>

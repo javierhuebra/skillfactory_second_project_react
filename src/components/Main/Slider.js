@@ -36,6 +36,7 @@ const Slider = () => {
                         info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
                         btnText={'ENTER'}
                         image={imagen_prueba}
+                        route={'/characters-rick-morty'}
                     />
                 </div>
                 <div className="image-2 component-slider">
@@ -44,6 +45,7 @@ const Slider = () => {
                         info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
                         btnText={'ENTER'}
                         image={imagen_prueba}
+                        route={'/posicion-1'}
                     />
                 </div>
                 <div className="image-3 component-slider">
@@ -52,6 +54,7 @@ const Slider = () => {
                         info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
                         btnText={'ENTER'}
                         image={imagen_prueba}
+                        route={'/posicion-2'}
                     />
                 </div>
             </div>
