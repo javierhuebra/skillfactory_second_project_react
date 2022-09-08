@@ -2,8 +2,14 @@ import '../../stylesheets/Main/RickMorty.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import CharacterList from './CharacterList';
+import { useParams, Link } from 'react-router-dom';
+import DisplayedCharacter from './DisplayedCharacter';
 
 const RickMorty = () =>{
+    
+    let  { id }    = useParams([]);
+    
+    console.log("useparams: ", id);
 
     const [characters, setCharacters] = useState([]);
     const [page, setPage] = useState(1);
@@ -28,17 +34,26 @@ const RickMorty = () =>{
     
     return (
         <div className="container-rick-morty">
-            <div className='cuadro-left'></div>
+            <div className='cuadro-left'> 
+            
+            <DisplayedCharacter
+                idChar={id}
+                characters={characters}
+            />
+          
+        
+           
+            </div>
             <div className='container-cuadro-right'>
                 <div className='cuadro-right'>  
                        
                 <CharacterList characters={characters}/>
-                   
+                  {console.log(characters)} 
                 </div>
                 <div className='container-buttons'>
-                    <button onClick={() => page==1 ? setPage(42) : setPage(page-1)}>Previus</button>
+                    <Link to={`/characters-rick-morty`}><button onClick={() => page==1 ? setPage(42) : setPage(page-1)}>Previus</button></Link>
                     <div className='num-pag'>{page}</div>
-                    <button onClick={() => page==42 ? setPage(1) : setPage(page+1)}>Next</button>
+                    <Link to={`/characters-rick-morty`}><button onClick={() => page==42 ? setPage(1) : setPage(page+1)}>Next</button></Link>
                 </div>
             </div>
             

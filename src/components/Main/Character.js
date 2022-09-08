@@ -1,6 +1,8 @@
 import '../../stylesheets/Main/Character.css';
-const Character = ({image, name, status, id}) =>{
+import { Link, useParams } from 'react-router-dom';
 
+const Character = ({image, name, status, id}) =>{
+   
     return (
         <div className="card-character">
             <img src={image} alt="character rick and morty"/>
@@ -8,7 +10,7 @@ const Character = ({image, name, status, id}) =>{
                 <h2>{name}</h2>
                 <p>{status}</p>
                 <p>{id}</p>
-                <button>View on RickyDex</button>
+                <Link to={`/characters-rick-morty/${id}`}><button>View on RickyDex</button></Link>
             </div>
         </div>
     )

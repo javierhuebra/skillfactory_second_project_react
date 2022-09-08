@@ -1,0 +1,47 @@
+.container-displayed-char{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(182, 87, 87);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+.pantalla-tv{
+    background-color: aqua;
+    width: 80%;
+    height: 80%;
+    padding: 60px;
+}
+.apagado{
+    padding: 0;
+}
+.ruido{
+    width: 100%;
+    height: 100%;
+}
+
+.encabezado{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.img-view{
+    width: 50%;
+}
+.encabezado-info{
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+}

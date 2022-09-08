@@ -9,6 +9,7 @@ const Main = () => {
                 <Route path='/' element={<Slider/>}/>
                 <Route path='/characters-rick-morty' element={<RickMorty/>}/>
                 
+                <Route path='/characters-rick-morty/:id' element={<RickMorty/>}/>  
                 
                 
             </Routes>     
