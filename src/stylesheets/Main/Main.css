@@ -1,6 +1,8 @@
 .main-container{
     min-height: 70vh;
     background-color: aquamarine;
+    background-image: url(../../images/Main/rickmortybola.png);
+   background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;

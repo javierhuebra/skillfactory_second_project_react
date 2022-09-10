@@ -51,9 +51,9 @@ const RickMorty = () =>{
                   {console.log(characters)} 
                 </div>
                 <div className='container-buttons'>
-                    <Link to={`/characters-rick-morty`}><button onClick={() => page==1 ? setPage(42) : setPage(page-1)}>Previus</button></Link>
+                    <Link to={`/characters-rick-morty`}><button className='btn-page' onClick={() => page==1 ? setPage(42) : setPage(page-1)}>Previous</button></Link>
                     <div className='num-pag'>{page}</div>
-                    <Link to={`/characters-rick-morty`}><button onClick={() => page==42 ? setPage(1) : setPage(page+1)}>Next</button></Link>
+                    <Link to={`/characters-rick-morty`}><button className='btn-page' onClick={() => page==42 ? setPage(1) : setPage(page+1)}>Next</button></Link>
                 </div>
             </div>
             

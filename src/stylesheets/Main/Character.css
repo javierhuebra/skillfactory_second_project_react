@@ -1,8 +1,86 @@
 .card-character{
     width: 300px;
-    height: 150px;
-    background-color: beige;
+    
+    background-color: rgb(60, 1, 78);
     margin: 0px 8px 8px 0px;
 
     display: flex;
+    
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.card-text-container{
+     /* background-color: rgb(216, 154, 154);  */
+    width: 100%;
+    padding-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.img-character{
+    border-radius: 50%;
+    width: 130px;
+}
+.contenedor-img-luz{
+    position: relative;
+   /*  background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+.luz-testigo{
+    width: 40px;
+    height: 40px;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.alive{
+    background-image: url(../../images/Main/alive.png);
+    background-size: 100% 100%;
+}
+.dead{
+    background-image: url(../../images/Main/death.png);
+    background-size: 100% 100%;
+}
+.unknown{
+    background-image: url(../../images/Main/unknow.png);
+    background-size: 100% 100%;
+}
+.id-character{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+}
+.btn-rickydex{
+    background-color: rgb(114, 73, 153);
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    position:absolute;
+    font-weight: bold;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    color: rgb(207, 207, 207);
+}
+
+.btn-rickydex:hover{
+    background-color: rgb(0, 43, 0);
+    color: white;
+    cursor: pointer;
 }

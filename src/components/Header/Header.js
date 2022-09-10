@@ -3,10 +3,11 @@ import srcLogo from '../../images/Header/logo.png';
 import '../../stylesheets/Header/Header.css'
 import Group from '../Header/Group';
 import Integrantes from '../Header/Integrantes';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return(
         <div className="header-container">
-            <Logo urlLogo={srcLogo}/>
+            <Link to='/'><Logo urlLogo={srcLogo}/></Link>
             <Group/>
             <Integrantes/>
         </div>

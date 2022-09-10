@@ -5,12 +5,19 @@ const Character = ({image, name, status, id}) =>{
    
     return (
         <div className="card-character">
-            <img src={image} alt="character rick and morty"/>
+            <div className='contenedor-img-luz'>
+                <img className='img-character' src={image} alt="character rick and morty"/>
+                <div className={`luz-testigo ${status=='Alive' ? 'alive': (status=='Dead' ? 'dead' : 'unknown') }`}></div>
+                <div className='id-character'>{id}</div>
+            </div>
+            
             <div className="card-text-container">
                 <h2>{name}</h2>
-                <p>{status}</p>
-                <p>{id}</p>
-                <Link to={`/characters-rick-morty/${id}`}><button>View on RickyDex</button></Link>
+                
+                
+            <Link to={`/characters-rick-morty/${id}`}><button className='btn-rickydex'>View on RickyDex</button></Link>
+                
+                
             </div>
         </div>
     )
