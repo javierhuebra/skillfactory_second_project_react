@@ -6,17 +6,17 @@
     z-index: 1;
     
 }
-ul{
+.container-integrantes ul{
     list-style: none;
-    background-color: aqua;
+    background-color: rgb(33, 0, 65);
     
     padding: 10px;
 
     border-radius: 0px 0px 15px 15px;
 }
-li{
+.container-integrantes li{
     margin: 10px 0;
-    background-color: rebeccapurple;
+    background-color: rgb(96, 26, 161);
     font-size: 20px;
     border-radius: 50px;
     width: 210px;
@@ -28,6 +28,9 @@ li{
     align-items: center;
     
 }
+.container-integrantes li:hover{
+    background-color: rgb(56, 2, 107);
+}
 
 .container-integrantes img{
     width:  45px;
@@ -35,4 +38,9 @@ li{
     margin-right: 5px;
     margin-left: 3px;
     
+}
+
+.container-integrantes a{
+    text-decoration: none;
+    color: white;
 }

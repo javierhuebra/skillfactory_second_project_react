@@ -25,10 +25,20 @@
     width: 180px;
     height: 70px;
     border-radius: 10px;
-    border: none;
+    border: 5px solid rgb(144, 95, 163);
+
+    background-color: rgb(82, 0, 165);
+    color: white;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
 
 }
-
+.cont-right button:hover{
+    background-color: rgb(34, 0, 56);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px violet;
+}
 .info-small img{
     width: 400px;
     height: 200px;
@@ -51,3 +61,4 @@
 .info-small p{
     margin-bottom: 5px;
 }
+

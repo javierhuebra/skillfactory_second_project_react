@@ -11,11 +11,11 @@ const Footer = () => {
                 <p>Skill Factory | By Avalith</p>
             </div>
             <div>
-            <a href='https://javierhuebra.github.io/skill_factory_first_project_js/'><p><FaGithub/>gitHub</p></a>
-            <a href='https://javierhuebra.github.io/skill_factory_first_project_js/'><p><FaLinkedin/>Linkedin</p></a>
-            <a href='https://javierhuebra.github.io/skill_factory_first_project_js/'><p><BsMailbox/>javieremanuelhuebra@gmail.com</p></a>
+            <a href='https://github.com/javierhuebra' target='_blank' className='clickable'><p><FaGithub/>gitHub</p></a>
+            <a href='https://www.linkedin.com/in/javieremanuelhuebra/' target='_blank' className='clickable'><p><FaLinkedin/>Linkedin</p></a>
+            <p><BsMailbox/>javieremanuelhuebra@gmail.com</p>
             </div>
-            <a href='https://javierhuebra.github.io/skill_factory_first_project_js/'><img src={imagenSkill}/></a>
+            <a href='https://www.avalith.net/' target={'_blank'}><img src={imagenSkill}/></a>
         </div>
     )
 }

@@ -6,7 +6,7 @@ const DisplayedCharacter = ({idChar, characters }) =>{
     if(idChar){
         let character = characters.filter((character)=>character.id==idChar);
         console.log("el arreglo filtrado: ",character);
-    
+        let episodes=0;
     
     return <>
         <div className="container-displayed-char">
@@ -16,8 +16,16 @@ const DisplayedCharacter = ({idChar, characters }) =>{
                     <img className='img-view' src={character[0].image}/>
                     <div className='encabezado-info'>
                         <h2>{character[0].name}</h2>
-                        <p>id</p>
-                        <p>dsadas</p>
+                        <p><span>Id:</span> {character[0].id}</p>
+                        <p><span>Status:</span> {character[0].status}</p>
+                        <p><span>Species:</span> {character[0].species}</p>
+                        <p><span>Gender:</span> {character[0].gender}</p>
+                        <p><span>Origin:</span> {character[0].origin.name}</p>
+                        <p><span>Location:</span> {character[0].location.name}</p>
+                        {character[0].episode.map((ep)=>{
+                            episodes++;
+                        })}
+                        <p><span>Participation in episodes:</span> {episodes}</p>
                     </div>
                 </div>
                 

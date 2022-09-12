@@ -21,10 +21,14 @@
 }
 
 .pantalla-tv{
-    background-color: aqua;
+    background-color: rgb(6, 75, 0);
     width: 80%;
     height: 80%;
     padding: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .apagado{
@@ -38,7 +42,7 @@
 .encabezado{
     width: 100%;
     height: 80%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
  
@@ -46,13 +50,32 @@
 }
 .img-view{
     width: 50%;
+    border: 5px solid rgb(189, 189, 1);
     
 }
 .encabezado-info{
     width: 50%;
     height: 100%;
-    background-color: blueviolet;
-    
+    /* background-color: blueviolet; */
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: rgb(189, 189, 1);
+    font-family:monospace;
+    font-weight: bold;
+}
+.encabezado-info h2{
+    color: yellow;
+    font-size: 30px;
+}
+.encabezado-info p{
+    font-size: 20px;
+}
+.encabezado-info span{
+    font-size: 20px;
+    color: yellow;
 }
 .num-pag{
     background-color:rgb(33, 0, 65);

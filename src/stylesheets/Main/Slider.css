@@ -11,6 +11,11 @@ position: relative;
     position: absolute;
     z-index: 10;
     top: 45%;
+    color: blueviolet;
+}
+.arrow:hover{
+    color: rgb(52, 1, 100);
+    cursor: pointer;
 }
 .left{
     left: 0;

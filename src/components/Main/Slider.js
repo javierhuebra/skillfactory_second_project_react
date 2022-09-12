@@ -1,5 +1,6 @@
 import '../../stylesheets/Main/Slider.css';
-import imagen_prueba from '../../images/Main/ricky.png';
+import imagen_rick from '../../images/Main/primerarick.png';
+import imagen_usuarios from '../../images/Main/usuarioslista.png';
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import InfoSlider from './InfoSlider';
 import { useState } from 'react';
@@ -35,16 +36,16 @@ const Slider = () => {
                         title={'Rick & Morty'}
                         info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
                         btnText={'ENTER'}
-                        image={imagen_prueba}
+                        image={imagen_rick}
                         route={'/characters-rick-morty'}
                     />
                 </div>
                 <div className="image-2 component-slider">
                     <InfoSlider
-                        title={'Rick & Morty'}
-                        info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
+                        title={'Users fetched from API'}
+                        info={'A list of users fetched from jsonplaceholder to display here!'}
                         btnText={'ENTER'}
-                        image={imagen_prueba}
+                        image={imagen_usuarios}
                         route={'/users-list'}
                     />
                 </div>
@@ -53,7 +54,7 @@ const Slider = () => {
                         title={'Rick & Morty'}
                         info={'A complete list of Rick and Morty characters fetched from Rick and Morty API.'}
                         btnText={'ENTER'}
-                        image={imagen_prueba}
+                        image={imagen_rick}
                         route={'/form'}
                     />
                 </div>
