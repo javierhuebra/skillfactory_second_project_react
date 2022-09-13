@@ -1,7 +1,7 @@
 .container-form{
     width: 500px;
     height: 500px;
-
+    position: relative;
 }
 .container-form form{
     width: 100%;
@@ -63,4 +63,52 @@ form label{
     color: white;
     background-color: blueviolet;
     cursor: pointer;
+    border: none;
+}
+
+.btn-form:hover{
+    background-color: rgb(46, 0, 59);
+}
+.info-form{
+    width: 700px;
+    height: 500px;
+    background-color: rgb(33, 0, 65);
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    border-radius: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  
+}
+.visible{
+    display: flex;
+}
+.msg-p{
+    font-size: 15px;
+}
+.info-form span{
+    color: red;
+    font-size: 27px;
+    font-weight: bold;
+}
+.cool-btn{
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.cool-btn:hover{
+    background-color: rgb(71, 5, 133);
 }

@@ -1,6 +1,6 @@
 import '../../stylesheets/Main/Form.css'
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Form = () => {
     const[data,setData]=useState({
         user_name:'',
@@ -8,6 +8,7 @@ const Form = () => {
         user_phone:'',
         user_message:''
     });
+const [mostrar, setMostrar] = useState(false);
 
     const handleInputChange = (event) => {
         console.log(event.target.value);
@@ -20,9 +21,11 @@ const Form = () => {
 
     const imprimirValores = () =>{
         console.log(data.user_name,data.user_email,data.user_email,data.user_message);
+        setMostrar(true);
     }
 
     return(
+        
         <div className="container-form">
             
             <form>
@@ -69,6 +72,11 @@ const Form = () => {
                 </ul>
                 <input onClick={imprimirValores} className='btn-form' type='button' value='Capturar Informacion'/>
             </form>
+            <div className={`info-form ${mostrar == true ? 'visible' : 'hidden'}`}>
+                <p>Thank you for your message <span>{data.user_name}</span>, we will contact you at number <span>{data.user_phone}</span> or at your email <span>{data.user_email}</span></p>
+                <p className='msg-p'>(This form has no validations because is a test)</p>
+                <Link to='/'><button className='cool-btn' onClick={()=>setMostrar(false)}>Cool</button></Link>
+            </div>
         </div>
     )
 }

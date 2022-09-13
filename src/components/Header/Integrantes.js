@@ -8,9 +8,9 @@ const Integrantes = () =>{
         <div className="container-integrantes">
             <ul>
                 <a href='https://www.linkedin.com/in/javieremanuelhuebra/' target='_blank'><li><img src={javi}/>Javier Huebra</li></a> 
-                <a href='https://www.linkedin.com/in/rolando-ramon-duarte-93116b17a/' target='_blank'><li><img src={rolo}/>Javier Huebra</li></a> 
-                <a href='https://www.linkedin.com/in/matias-spirilis/' target='_blank'><li><img src={mati}/>Javier Huebra</li></a> 
-                <a href='https://www.linkedin.com/in/sebadalessandro/' target='_blank'><li><img src={seba}/>Javier Huebra</li></a> 
+                <a href='https://www.linkedin.com/in/rolando-ramon-duarte-93116b17a/' target='_blank'><li><img src={rolo}/>Rolando Duarte</li></a> 
+                <a href='https://www.linkedin.com/in/matias-spirilis/' target='_blank'><li><img src={mati}/>Matías Spirilis</li></a> 
+                <a href='https://www.linkedin.com/in/sebadalessandro/' target='_blank'><li><img src={seba}/>S. Dalessandro</li></a> 
             </ul>
         </div>
     )
